@@ -1,7 +1,672 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3Token - Advanced ERC20 Stablecoin with HalfLife Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/t3_logo.png" alt="T3Token Logo" height="40"> T3Token</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#use-cases">Use Cases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technical">Technical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">T3Token</h1>
+                    <h2 class="mb-4">The Next Generation of Secure Digital Transactions</h2>
+                    <p class="lead mb-4">An ERC20 stablecoin with revolutionary HalfLife technology that enables transaction reversals and adaptive security.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="#features" class="btn btn-primary btn-lg px-4 me-md-2">Explore Features</a>
+                        <a href="#technical" class="btn btn-outline-secondary btn-lg px-4">Technical Docs</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="images/t3_logo.png" alt="T3Token Logo" class="hero-logo img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">About T3Token</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>What is T3Token?</h3>
+                    <p>T3Token is an ERC20-compliant stablecoin built on the Ethereum blockchain that introduces revolutionary features to enhance transaction security and user control.</p>
+                    <p>Unlike traditional cryptocurrencies, T3Token implements a unique "HalfLife" mechanism that creates a time-based constraint on token transfers, allowing for transaction reversals within a specified period.</p>
+                    <p>This innovative approach addresses key challenges in digital transactions, including fraud prevention, error correction, and trust building between parties.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card about-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Key Innovations</h3>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-clock-history"></i> Time-based transaction constraints</li>
+                                <li><i class="bi bi-arrow-counterclockwise"></i> Reversible transactions</li>
+                                <li><i class="bi bi-shield-check"></i> Adaptive security based on transaction patterns</li>
+                                <li><i class="bi bi-graph-up"></i> Trust-building mechanics</li>
+                                <li><i class="bi bi-currency-exchange"></i> Full ERC20 compatibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Platform Features</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-currency-exchange"></i>
+                            </div>
+                            <h3 class="card-title">ERC20 Compliance</h3>
+                            <p class="card-text">Built on OpenZeppelin's ERC20 implementation, ensuring compatibility with existing Ethereum wallets, exchanges, and DeFi platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-hourglass-split"></i>
+                            </div>
+                            <h3 class="card-title">HalfLife Mechanism</h3>
+                            <p class="card-text">Introduces a time-based constraint on token transfers, creating a "cooling period" during which transactions can be reversed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-arrow-counterclockwise"></i>
+                            </div>
+                            <h3 class="card-title">Transfer Reversal</h3>
+                            <p class="card-text">Allows transactions to be undone within the HalfLife period, providing protection against errors and fraud.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-sliders"></i>
+                            </div>
+                            <h3 class="card-title">Adaptive HalfLife</h3>
+                            <p class="card-text">Adjusts the HalfLife duration based on transaction patterns, providing greater security for new or unusual transactions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-database-check"></i>
+                            </div>
+                            <h3 class="card-title">Transfer Metadata</h3>
+                            <p class="card-text">Each transfer stores detailed metadata for security validation and transaction history tracking.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+                            <h3 class="card-title">Security Measures</h3>
+                            <p class="card-text">Multiple security constraints prevent unauthorized reversals, double-reversals, and third-party spoofing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">How It Works</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <div class="process-diagram">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="bi bi-send"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Initial Transfer</h4>
+                                    <p>Sender initiates a token transfer to the recipient. The transaction is recorded on the blockchain with metadata including the HalfLife period.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="bi bi-hourglass-split"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>HalfLife Period</h4>
+                                    <p>During this period (default: 1 hour), the recipient cannot forward the tokens to another address, but can reverse the transaction back to the sender.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="bi bi-check-circle"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Commitment</h4>
+                                    <p>After the HalfLife period expires, the transaction is considered final. The recipient can now freely transfer the tokens to other addresses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Reversal Process</h3>
+                    <ol class="process-list">
+                        <li>Within the HalfLife period, either the sender or recipient can initiate a reversal.</li>
+                        <li>The reversal function is called with the recipient's address, the sender's address, and the exact amount.</li>
+                        <li>The contract verifies that the reversal is within the HalfLife period and that the tokens are being returned to the original sender.</li>
+                        <li>If all conditions are met, the tokens are transferred back to the sender and the transfer metadata is cleared.</li>
+                    </ol>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Adaptive HalfLife</h3>
+                    <div class="adaptive-halflife">
+                        <div class="halflife-item">
+                            <div class="halflife-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <div class="halflife-content">
+                                <h4>Trust Building</h4>
+                                <p>As transaction count between the same parties increases, the minimum HalfLife duration decreases.</p>
+                            </div>
+                        </div>
+                        <div class="halflife-item">
+                            <div class="halflife-icon">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <div class="halflife-content">
+                                <h4>High-Value Protection</h4>
+                                <p>Transactions significantly larger than the average receive an extended HalfLife period.</p>
+                            </div>
+                        </div>
+                        <div class="halflife-item">
+                            <div class="halflife-icon">
+                                <i class="bi bi-arrow-repeat"></i>
+                            </div>
+                            <div class="halflife-content">
+                                <h4>Pattern Reset</h4>
+                                <p>After 30 days of inactivity, the rolling average resets, restoring higher security for new transactions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Use Cases</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="use-case-card card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="bi bi-shield-check"></i> Enhanced Security</h3>
+                            <p class="card-text">The reversal capability provides protection against errors, fraud, and unauthorized transactions. If a user accidentally sends tokens to the wrong address or a transaction is made without proper authorization, it can be reversed within the HalfLife period.</p>
+                            <div class="use-case-example">
+                                <h5>Example:</h5>
+                                <p>A company accidentally sends a payment to the wrong vendor. With T3Token, they can reverse the transaction within the HalfLife period, preventing financial loss.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="use-case-card card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="bi bi-people"></i> Trust Building</h3>
+                            <p class="card-text">New trading partners can start with longer HalfLife periods that automatically reduce as trust builds through repeated transactions. This creates a natural progression from high security to higher convenience.</p>
+                            <div class="use-case-example">
+                                <h5>Example:</h5>
+                                <p>A marketplace platform uses T3Token for transactions between buyers and sellers. New users have longer HalfLife periods, but as they build a transaction history, the periods automatically shorten for more efficient trading.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="use-case-card card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="bi bi-cash-stack"></i> High-Value Protection</h3>
+                            <p class="card-text">Unusual or high-value transactions automatically receive extended protection through longer HalfLife periods, providing additional security when it matters most.</p>
+                            <div class="use-case-example">
+                                <h5>Example:</h5>
+                                <p>A real estate transaction using T3Token would automatically receive an extended HalfLife period due to the high value, giving both parties more time to verify all aspects of the transaction before it becomes final.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="use-case-card card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="bi bi-exclamation-triangle"></i> Fraud Prevention</h3>
+                            <p class="card-text">The cooling period prevents immediate re-spending of received tokens, reducing certain types of fraud and allowing time for suspicious activities to be detected and reversed.</p>
+                            <div class="use-case-example">
+                                <h5>Example:</h5>
+                                <p>A fraudster attempts to quickly move stolen tokens through multiple accounts. With T3Token, the HalfLife period prevents immediate forwarding, giving the victim time to detect and reverse the initial fraudulent transaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Section -->
+    <section id="technical" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Technical Documentation</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Smart Contract Architecture</h3>
+                    <p>T3Token extends OpenZeppelin's ERC20 and Ownable contracts, providing a secure foundation with standard token functionality and ownership controls.</p>
+                    <div class="code-block">
+                        <pre><code>// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract T3Token is ERC20, Ownable {
+    // Contract implementation
+}</code></pre>
+                    </div>
+                    <h3>Data Structures</h3>
+                    <div class="code-block">
+                        <pre><code>struct TransferMetadata {
+    uint256 commitWindowEnd;
+    uint256 halfLifeDuration;
+    address originator;
+    uint256 transferCount;
+    bytes32 reversalHash;
+}
+
+struct RollingAverage {
+    uint256 totalAmount;
+    uint256 count;
+    uint256 lastUpdated;
+}</code></pre>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Key Functions</h3>
+                    <div class="accordion" id="functionsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    transfer
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#functionsAccordion">
+                                <div class="accordion-body">
+                                    <p>Overrides the standard ERC20 transfer function to include metadata tracking.</p>
+                                    <div class="code-block">
+                                        <pre><code>function transfer(address recipient, uint256 amount) public override returns (bool) {
+    _transfer(_msgSender(), recipient, amount);
+    transferData[recipient] = TransferMetadata({
+        commitWindowEnd: block.timestamp + halfLifeDuration,
+        halfLifeDuration: halfLifeDuration,
+        originator: _msgSender(),
+        transferCount: transferData[recipient].transferCount + 1,
+        reversalHash: keccak256(abi.encodePacked(_msgSender(), recipient, amount))
+    });
+    return true;
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    reverseTransfer
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#functionsAccordion">
+                                <div class="accordion-body">
+                                    <p>Allows for transaction reversals within the HalfLife period.</p>
+                                    <div class="code-block">
+                                        <pre><code>function reverseTransfer(address from, address to, uint256 amount) external {
+    TransferMetadata memory meta = transferData[from];
+
+    require(msg.sender == from || msg.sender == to, "Only sender or receiver can reverse");
+    require(block.timestamp < meta.commitWindowEnd, "HalfLife expired");
+    require(to == meta.originator, "Reversal must go back to originator");
+    require(balanceOf(from) >= amount, "Insufficient balance to reverse");
+
+    _transfer(from, to, amount);
+
+    // Prevent reversal of reversal (no metadata created)
+    delete transferData[from];
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    transferWithHalfLife
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#functionsAccordion">
+                                <div class="accordion-body">
+                                    <p>Advanced transfer function with adaptive HalfLife duration based on transaction patterns.</p>
+                                    <div class="code-block">
+                                        <pre><code>function transferWithHalfLife(address to, uint256 amount, uint256 requestedHalfLife) public returns (bool) {
+    // Calculate decay-based minimum
+    uint256 txCount = transactionCountBetween[msg.sender][to];
+    uint256 decayMin = 43200 >> txCount;
+
+    // Load rolling average
+    RollingAverage storage avg = rollingAvg[msg.sender][to];
+    uint256 average = avg.count > 0 ? avg.totalAmount / avg.count : 0;
+
+    // Reset if 30 days passed
+    if (block.timestamp > avg.lastUpdated + 30 days) {
+        avg.totalAmount = 0;
+        avg.count = 0;
+    }
+
+    // Update rolling average
+    avg.totalAmount += amount;
+    avg.count += 1;
+    avg.lastUpdated = block.timestamp;
+
+    // Check for high-value transaction boost
+    uint256 highValueMin = (average > 0 && amount > (average * 150) / 100) ? 3600 : 0;
+
+    // Determine applied HalfLife
+    uint256 finalMin = decayMin > highValueMin ? decayMin : highValueMin;
+    uint256 appliedHalfLife = requestedHalfLife > finalMin ? requestedHalfLife : finalMin;
+
+    // Execute transfer
+    _transfer(msg.sender, to, amount);
+
+    // Set transfer metadata
+    transferData[to] = TransferMetadata({
+        commitWindowEnd: block.timestamp + appliedHalfLife,
+        halfLifeDuration: appliedHalfLife,
+        originator: msg.sender,
+        transferCount: transferData[to].transferCount + 1,
+        reversalHash: keccak256(abi.encodePacked(msg.sender, to, amount, block.timestamp))
+    });
+
+    transactionCountBetween[msg.sender][to]++;
+    return true;
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                    What is the HalfLife mechanism?
+                                </button>
+                            </h2>
+                            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>The HalfLife mechanism is a time-based constraint on token transfers that creates a "cooling period" during which transactions can be reversed. By default, this period is set to 3600 seconds (1 hour), but it can adapt based on transaction patterns between parties.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                    Can any transaction be reversed?
+                                </button>
+                            </h2>
+                            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Transactions can only be reversed under specific conditions:</p>
+                                    <ul>
+                                        <li>The reversal must occur within the HalfLife period</li>
+                                        <li>Only the sender or receiver can initiate a reversal</li>
+                                        <li>Tokens must be returned to the original sender</li>
+                                        <li>The full amount must be reversed</li>
+                                    </ul>
+                                    <p>Additionally, once a transaction has been reversed, that reversal cannot itself be reversed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                    How does the adaptive HalfLife work?
+                                </button>
+                            </h2>
+                            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>The adaptive HalfLife adjusts the duration of the reversal window based on several factors:</p>
+                                    <ul>
+                                        <li>Transaction history between the parties (more transactions = shorter HalfLife)</li>
+                                        <li>Transaction amount relative to average (higher than usual = longer HalfLife)</li>
+                                        <li>User-requested duration (must be at least the minimum calculated value)</li>
+                                    </ul>
+                                    <p>This system automatically provides higher security for new relationships and unusual transactions while offering convenience for established patterns.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                                    Is T3Token compatible with existing wallets and exchanges?
+                                </button>
+                            </h2>
+                            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Yes, T3Token is fully ERC20-compliant, making it compatible with existing Ethereum wallets, exchanges, and DeFi platforms. However, to utilize the advanced features like transaction reversals and adaptive HalfLife, users would need to interact directly with the contract functions or use a specialized interface that supports these features.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                                    What happens if I try to transfer tokens I just received?
+                                </button>
+                            </h2>
+                            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>During the HalfLife period, you cannot forward tokens you just received to another address. This is a security feature that prevents certain types of fraud and gives the original sender time to reverse the transaction if needed. Once the HalfLife period expires, you can freely transfer the tokens to any address.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Get Started</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Contact Us</h3>
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="your.email@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Developer Resources</h3>
+                    <div class="resource-links">
+                        <a href="#" class="resource-link">
+                            <i class="bi bi-github"></i>
+                            <span>GitHub Repository</span>
+                        </a>
+                        <a href="#" class="resource-link">
+                            <i class="bi bi-file-earmark-text"></i>
+                            <span>Technical Documentation</span>
+                        </a>
+                        <a href="#" class="resource-link">
+                            <i class="bi bi-book"></i>
+                            <span>Integration Guide</span>
+                        </a>
+                        <a href="#" class="resource-link">
+                            <i class="bi bi-chat-dots"></i>
+                            <span>Developer Community</span>
+                        </a>
+                    </div>
+                    <div class="newsletter-signup mt-4">
+                        <h4>Stay Updated</h4>
+                        <p>Subscribe to our newsletter for the latest updates and announcements.</p>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="your.email@example.com" aria-label="Email address" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>T3Token</h4>
+                    <p>The Next Generation of Secure Digital Transactions</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-discord"></i></a>
+                    </div>
+                    <p class="mt-2">&copy; 2025 T3Token. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
